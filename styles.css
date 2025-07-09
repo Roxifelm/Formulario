@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} /*es un reseteo al principio*/
+
+/* Reseteo de estilos básicos */
+
+
+/* Estilo etiqueta section */
+section {
+  margin-bottom: 3px;
+  padding-bottom: 3px;
+}
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+
+/* Estilo etiqueta label */
+label {
+  display: block;
+  margin: 0.2rem 0;
+}
+
+
+/* Estilo pagina */
+body {
+  background: linear-gradient(to right, #ac5de1, #412aa1);
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+
+/* Estilo del bloque de la tarjeta */
+.block{
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+/* Estilo de la tarjeta */
+.card {
+  background: linear-gradient(to left, #ac5de1, #412aa1);
+  padding: 2rem;
+  color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  border: 2px solid transparent; /* borde inicial transparente para transición */
+  transition: box-shadow 0.4s ease, border 0.4s ease;
+}
+
+/* Estilos de formulario */
+.form__input, .form__select,.form__textarea {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid black;
+  font-size: 1rem;
+  width: 100%;
+}
+
+/* Estilo botón */
+.form_button {
+ background-color:white;
+ color: purple;
+ padding: 0;
+ border-radius: 16px;
+ padding-left: 45%;
+ border: solid 2px black;
+ padding: 0.5rem;
+ border-radius: 8px;
+ border: 1px solid black;
+ width: 100%;
+ 
+}
+
+.form_button:hover {
+  background-color: #ac5de1;
+  color: black;
+}
+
+/* Estilo seleccion de libros */
+.select{
+display: flex;
+flex-direction:row;
+gap: 1rem;
+}
+
+/* seleccion de libros */
+.aceptar{
+display: flex;
+flex-grow: 10px;
+gap: 1em;
+... (3 lines left)
