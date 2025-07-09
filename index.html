@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+   <link rel="stylesheet"  href="/styles.css">
+</head>
+<body>
+    <div class="block card">
+    <h1>Inscripción al club de Lectura</h1>
+    <form>
+        <section>
+                <label class="form__label">Nombre</label>
+                <input type="text" class="form__input" required minlength="3" placeholder="Ej: Ruben el Sabio">
+
+                <label class="form__label">Correo electronico</label>
+                <input type="email" class="form__input" required placeholder="Ej: ruben@gmail.com">
+        </section>
+
+        <section>
+            <label class="form__label">Tipo de lectura</label>
+            <select class="form__select" required>
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="terror">Terror</option>
+                <option value="romance">Romance</option>
+                <option value="fantasia">Fantasía</option>
+                <option value="ciencia Ficción">Ciencia Ficción</option>
+                <option value="otras">Otras</option>
+            </select>
+        </section>
+        
+        <section>
+            <label class="form__label">¿Tienes libros?</label>
+            <div class="select">
+            <input type="radio" value="si" name="libros" id="libros_si">
+            <label for="libros_si">Si</label>
+            <input type="radio" value="no" name="libros" id="libros_no">
+            <label for="libros_no">No</label>
+            </div>
+        </section>
+
+        <section class="aceptar">
+            <input type="checkbox" required id="normas_club">
+            <label for="normas_club">Acepto las normas del club</label>
+        </section>
+        <section>
+            <label for="comentarios">Comentarios adicionales</label>
+            <textarea rows="5" cols="30" placeholder="Comentarios adicionales"></textarea>
+        </section>
+        <section>
+             <button type="submit" class="form_button">Enviar</button>
+        </section> 
+        <section>
+             <button type="reset" class="form_button">Borrar</button>
+        </section>  
+    </form>
+    </div>
+</body>
+</html>
